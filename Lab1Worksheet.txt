@@ -1,23 +1,30 @@
 Lab 1 Worksheet
 
 1. What if 12 bits were used to store a signed integer. What is the biggest/smallest possible integer?
+	2048
 
 2. Think about possible values and their range, say what type of variable would be suitable for the following, and suggest a name for it too. 
-
+	
 For example: the temperature of a room in degrees Fahrenheit. Room temperature is likely to vary between say 50 degrees F and 100 degrees F,  but it can take any value in between including non-integers, e.g 71.19 F, so the type must be float or double depending on the accuracy required. A suitable variable name would be roomTemp. 
 
 
 (i) The number of pages in a book; 
+	int numPages
 
 (ii) The number of atoms in a book; 
+	int numAtoms
 
 (iii) The length of a side of a triangle in inches; 
+	double triLength
 
 (iv) Your name; 
+	String name
 
 (v) Whether or not a nucleus has decayed; 
+	boolean nuclDecayed
 
 (vi) The probability that it could have decayed. 
+	double nuclDecayed
 
 3. Start to do a little java programming! 
 	Follow the example of the Hello.java program and do some testing of Java int and float.
@@ -31,5 +38,29 @@ For example: the temperature of a room in degrees Fahrenheit. Room temperature i
 			Addition
 			Division (in both directions)
 
-
-
+public class Arithmetic {
+	public static void main(String[] args) {
+		int a = 2;
+		int b = 3;
+		float x = .1438f;
+		float y = .7690f;
+		System.out.println(a + b);
+		System.out.println(a + x);
+		System.out.println(a + y);
+		System.out.println(b + x);
+		System.out.println(b + y);
+		System.out.println(x + y);
+		System.out.println(a/b);
+		System.out.println(a/x);
+		System.out.println(a/y);
+		System.out.println(b/x);
+		System.out.println(b/y);
+		System.out.println(x/y);
+		System.out.println(y/x);
+		System.out.println(y/b);
+		System.out.println(y/a);
+		System.out.println(x/b);
+		System.out.println(x/a);
+		System.out.println(b/a);
+	}
+}
